@@ -1,9 +1,5 @@
 pipeline {
   agent any
-
-  environment {
-    NGROK_AUTH_TOKEN = credentials('ngrok-auth-token')
-  }
   
   stages {
     stage('Build') {
