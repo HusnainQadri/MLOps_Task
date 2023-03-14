@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'echo Pakistan Zindabad'
+        bat 'echo Pakistan Zindabad'
       }
     }
   }
