@@ -2,10 +2,8 @@ from flask import Flask, request, jsonify
 import pickle
 import numpy as np
 
-# create a Flask app
-app = Flask(_name_)
+app = Flask(__name__)
 
-# define the route for the prediction API
 @app.route('/predict', methods=['POST'])
 def predict():
     
@@ -23,5 +21,5 @@ def predict():
 
     return jsonify(response)
 
-if _name_ == '_main_':
+if __name__ == '_main_':
     app.run(debug=True)
